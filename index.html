@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LG Consulting — Your Personal Catering Concierge</title>
-<meta name="description" content="LG Consulting is a concierge catering service led by Lyna, matching companies with exceptional local restaurants for nearly 20 years. One call, one contact, one flawless event.">
+<title>LG Consulting — Corporate Catering &amp; Event Planning Concierge</title>
+<meta name="description" content="LG Consulting is a corporate concierge service for catering, event planning, and special events. Led by Lyna Guerena with nearly 15 years of high-level hospitality connections. One call, one contact, one flawless event.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
@@ -77,25 +77,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 58px;
+    height: 66px;
   }
-  @media (min-width: 600px) { .nav .wrap { height: 68px; } }
+  @media (min-width: 600px) { .nav .wrap { height: 80px; } }
   .logo {
     text-decoration: none;
     display: flex;
-    align-items: baseline;
-    gap: 12px;
+    align-items: center;
+    gap: 10px;
     min-width: 0;
   }
+  .logo-icon { flex: none; }
   .logo-name {
     font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
-    font-size: 20px;
-    letter-spacing: 0.04em;
-    color: var(--midnight);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: #0F1118;
     white-space: nowrap;
   }
-  @media (min-width: 600px) { .logo-name { font-size: 22px; } }
+  @media (min-width: 600px) { .logo-name { font-size: 32px; } }
 
   /* Mobile menu */
   .menu-toggle {
@@ -115,7 +116,7 @@
   .mobile-menu {
     display: none;
     position: fixed;
-    top: 58px;
+    top: 66px;
     left: 0; right: 0; bottom: 0;
     background: rgba(248,245,240,0.98);
     backdrop-filter: blur(16px);
@@ -143,10 +144,11 @@
     display: none;
   }
   .logo-sub {
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--ink-faint);
+    color: var(--ink-soft);
     display: none;
   }
   @media (min-width: 600px) {
@@ -266,7 +268,7 @@
   }
   .hero-actions .btn { min-height: 48px; min-width: 220px; justify-content: center; }
   @media (min-width: 500px) {
-    .hero-actions { flex-direction: row; gap: 18px; }
+    .hero-actions { flex-direction: row; gap: 18px; justify-content: center; }
     .hero-actions .btn { min-width: auto; }
   }
 
@@ -398,9 +400,6 @@
     width: 1px;
     background: var(--line);
   }
-  @media (min-width: 700px) {
-    .timeline::before { left: 50%; }
-  }
 
   .tl-item {
     display: flex;
@@ -464,6 +463,7 @@
     border: 1px solid var(--line);
   }
   @media (min-width: 700px) { .svc-grid { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 960px) { .svc-grid { grid-template-columns: 1fr 1fr 1fr; } }
 
   .svc-card {
     background: var(--ivory);
@@ -764,9 +764,14 @@
 <header class="nav">
   <div class="wrap">
     <a href="#top" class="logo">
+      <svg class="logo-icon" width="52" height="52" viewBox="0 0 38 38" aria-hidden="true">
+        <circle cx="19" cy="19" r="18" fill="none" stroke="#1B2030" stroke-width="1.5"/>
+        <circle cx="19" cy="19" r="15.5" fill="none" stroke="#B8953E" stroke-width="0.8"/>
+        <text x="19" y="25" font-family="'Cormorant Garamond', Georgia, serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0.02em"><tspan fill="#1B2030">L</tspan><tspan fill="#B8953E">G</tspan></text>
+      </svg>
       <span class="logo-name">LG Consulting</span>
       <span class="logo-line" aria-hidden="true"></span>
-      <span class="logo-sub">Catering Concierge</span>
+      <span class="logo-sub">Corporate Events &amp; Catering</span>
     </a>
     <div class="nav-links">
       <a href="#about" class="nav-link">About</a>
@@ -792,9 +797,9 @@
   <section class="hero">
     <div class="wrap">
       <div class="reveal">
-        <p class="eyebrow">Catering Concierge</p>
+        <p class="eyebrow" style="color: #0F1118; font-weight: 700;">Corporate Catering &amp; Event Planning</p>
         <h1>One call. <em>Every detail handled.</em></h1>
-        <p class="lede">LG Consulting is a personal concierge service for corporate catering — connecting your company with exceptional local restaurants so every meal is flawless, and you never manage a vendor again.</p>
+        <p class="lede">LG Consulting is a concierge service for corporate catering and event planning — sourcing exceptional caterers, coordinating special events, and managing every detail so your team never has to.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-gold">Schedule a Consultation</a>
           <a href="#about" class="btn btn-outline">Meet Lyna</a>
@@ -802,7 +807,7 @@
       </div>
       <div class="hero-promise reveal">
         <div class="promise-item">
-          <div class="promise-num">20</div>
+          <div class="promise-num">15</div>
           <div class="promise-label">Years of Experience</div>
         </div>
         <div class="promise-item">
@@ -829,54 +834,13 @@
         <p class="eyebrow">Your Concierge</p>
         <h2>Meet <em>Lyna</em></h2>
         <div class="about-body">
-          <p>For close to twenty years, Lyna has worked at the intersection of hospitality and corporate events — building a network of trusted restaurant partners that most people simply don't have access to. She knows the kitchens, the chefs, and the operations behind them, so when she recommends a caterer for your event, it comes from firsthand experience, not a search engine.</p>
-          <p>LG Consulting was founded on a simple idea: companies shouldn't have to manage multiple vendors, chase invoices, or gamble on an unknown kitchen for an important event. Lyna acts as your single point of contact — on call from the first conversation through the last plate cleared — sourcing the right restaurant, coordinating every detail, and making sure nothing falls through.</p>
-          <p>When you work with LG Consulting, you're not hiring a faceless platform. You're getting direct access to someone who has spent two decades cultivating relationships with the best local restaurants and who treats your reputation like her own.</p>
+          <p>For close to fifteen years, Lyna has worked at the intersection of corporate hospitality, event planning, and executive dining — building a network of trusted catering partners, premier venues, and top-tier vendors that most companies simply don't have access to.</p>
+          <p>LG Consulting was founded on a simple idea: corporations shouldn't have to juggle multiple vendors, chase invoices, or gamble on an unproven partner for a high-stakes event. Whether it's a recurring executive lunch program, a product launch, or a company milestone celebration, Lyna acts as your single point of contact — sourcing the right caterers, coordinating every detail, and making sure nothing falls through.</p>
+          <p>When you work with LG Consulting, you're not hiring a faceless agency. You're getting direct access to someone who has spent fifteen years cultivating relationships at the highest levels of hospitality and who treats your company's reputation like her own.</p>
         </div>
         <div class="about-signature">
-          <div class="sig-name">Lyna</div>
+          <div class="sig-name">Lyna Guerena</div>
           <div class="sig-title">Founder &amp; Catering Concierge</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="how">
-    <div class="wrap">
-      <div class="reveal">
-        <p class="eyebrow" style="text-align:center;">How It Works</p>
-        <h2>A concierge experience,<br>not a transaction.</h2>
-        <p class="how-sub">Every engagement follows the same white-glove process — whether it's a working lunch for twelve or a gala dinner for two hundred.</p>
-      </div>
-      <div class="timeline reveal">
-        <div class="tl-item">
-          <div class="tl-dot">1</div>
-          <div class="tl-content">
-            <h3>A Personal Consultation</h3>
-            <p>Share your vision — headcount, budget, cuisine, dietary needs, and the impression you want to make. A quick call or message is all it takes.</p>
-          </div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot">2</div>
-          <div class="tl-content">
-            <h3>Curated Restaurant Options</h3>
-            <p>Lyna hand-selects restaurants from her personal network — each one vetted, with menus and pricing tailored to your brief.</p>
-          </div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot">3</div>
-          <div class="tl-content">
-            <h3>Full-Service Coordination</h3>
-            <p>Once you approve, she handles everything: ordering, logistics, delivery, and day-of adjustments. One invoice, zero stress.</p>
-          </div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot">4</div>
-          <div class="tl-content">
-            <h3>On Call Until It's Done</h3>
-            <p>Lyna remains available through the entire event. If anything needs changing, you have one number to call — hers.</p>
-          </div>
         </div>
       </div>
     </div>
@@ -889,86 +853,34 @@
     <div class="wrap">
       <div class="reveal">
         <p class="eyebrow" style="text-align:center;">Services</p>
-        <h2>Tailored to how your company works.</h2>
+        <h2>Tailored to how your corporation operates.</h2>
       </div>
       <div class="svc-grid reveal">
         <div class="svc-card">
-          <h3>Executive &amp; Board Meetings</h3>
-          <p>Refined menus for smaller rooms where the food is part of the impression. Sourced from restaurants that understand the brief.</p>
+          <h3>Corporate Event Planning</h3>
+          <p>End-to-end coordination for product launches, conferences, shareholder meetings, and company retreats — from venue sourcing to final breakdown.</p>
         </div>
         <div class="svc-card">
-          <h3>Office Lunches &amp; Team Meals</h3>
-          <p>Recurring or one-off, scaled for a working lunch or a full-floor event. Dietary needs handled before the order is placed.</p>
+          <h3>Executive &amp; Board Catering</h3>
+          <p>Refined menus for boardrooms and C-suite dinners where the food is part of the impression. Sourced from caterers who understand the stakes.</p>
         </div>
         <div class="svc-card">
-          <h3>Corporate Events &amp; Offsites</h3>
-          <p>Larger programs for launches, conferences, and retreat days — fully managed from menu planning to final breakdown.</p>
+          <h3>Special Events &amp; Milestones</h3>
+          <p>Company anniversaries, holiday galas, award ceremonies, and team celebrations — fully produced with catering, decor, and vendor management.</p>
         </div>
         <div class="svc-card">
-          <h3>Client Entertaining</h3>
-          <p>High-touch catering for moments when the meal is part of the relationship. Lyna treats your client like her own.</p>
+          <h3>Corporate Offsites &amp; Retreats</h3>
+          <p>Multi-day programs with coordinated meals, activities, and logistics for leadership retreats and team-building events.</p>
+        </div>
+        <div class="svc-card">
+          <h3>Recurring Breakfast, Lunch &amp; Meal Programs</h3>
+          <p>Standing weekly or monthly catering rotations for offices of any size. Menus managed, dietary needs handled, one invoice per cycle.</p>
+        </div>
+        <div class="svc-card">
+          <h3>Client &amp; Investor Entertaining</h3>
+          <p>High-touch catering and event coordination for moments when hospitality is part of the business relationship.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- PROMISE -->
-  <section class="promise">
-    <div class="wrap">
-      <div class="reveal">
-        <p class="eyebrow">The LG Difference</p>
-        <h2>Why companies stay.</h2>
-      </div>
-      <div class="pillars reveal">
-        <div class="pillar">
-          <div class="pillar-icon">
-            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          </div>
-          <h3>A Real Relationship</h3>
-          <p>You work with Lyna directly — not a rotating account team or a chatbot.</p>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          </div>
-          <h3>An Exclusive Network</h3>
-          <p>Nearly two decades of restaurant partnerships that aren't on any public directory.</p>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon">
-            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          </div>
-          <h3>Nothing Falls Through</h3>
-          <p>One contact, one invoice, and someone on call until the last detail is done.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="gold-rule">
-
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <div class="wrap">
-      <div class="reveal">
-        <p class="eyebrow" style="text-align:center;">Client Testimonials</p>
-        <h2>In their words.</h2>
-      </div>
-      <div class="test-grid reveal">
-        <div class="test-card">
-          <blockquote>"We stopped managing catering entirely. One message to Lyna on Monday, and a beautiful spread arrives on Thursday."</blockquote>
-          <p class="attribution">— Placeholder, Office Manager</p>
-        </div>
-        <div class="test-card">
-          <blockquote>"One invoice for a 60-person offsite instead of coordinating five vendors. That alone made her indispensable."</blockquote>
-          <p class="attribution">— Placeholder, Events Director</p>
-        </div>
-        <div class="test-card">
-          <blockquote>"Every dietary restriction was handled before we thought to ask. The food was exceptional, and Lyna made it effortless."</blockquote>
-          <p class="attribution">— Placeholder, VP of Operations</p>
-        </div>
-      </div>
-      <p class="test-placeholder">— Replace with real client testimonials —</p>
     </div>
   </section>
 
@@ -978,7 +890,7 @@
       <div class="reveal">
         <p class="eyebrow" style="color: var(--gold-light);">Get In Touch</p>
         <h2>Let's discuss your next event.</h2>
-        <p class="lede">Whether it's a recurring lunch program or a one-night gala, Lyna will personally walk you through every option. Reach out and expect a response within one business day.</p>
+        <p class="lede">Whether it's a recurring executive lunch program, a corporate gala, or a company milestone event, Lyna will personally walk you through every option. Reach out and expect a response within one business day.</p>
 
         <div class="contact-detail">
           <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -986,7 +898,7 @@
         </div>
         <div class="contact-detail">
           <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <span><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></span>
+          <span><a href="mailto:lguerena@me.com">lguerena@me.com</a></span>
         </div>
       </div>
 
@@ -1015,11 +927,18 @@
 <footer>
   <div class="wrap foot-inner">
     <div>
-      <span class="logo-name">LG Consulting</span>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <svg width="30" height="30" viewBox="0 0 38 38" aria-hidden="true">
+          <circle cx="19" cy="19" r="18" fill="none" stroke="#F8F5F0" stroke-width="1.5"/>
+          <circle cx="19" cy="19" r="15.5" fill="none" stroke="#B8953E" stroke-width="0.8"/>
+          <text x="19" y="25" font-family="'Cormorant Garamond', Georgia, serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0.02em"><tspan fill="#F8F5F0">L</tspan><tspan fill="#B8953E">G</tspan></text>
+        </svg>
+        <span class="logo-name">LG Consulting</span>
+      </div>
       <p class="foot-copy">© 2026 Lyna Guerena or LG Consulting, LLC. All Rights Reserved.</p>
     </div>
     <div class="foot-links">
-      <a href="mailto:hello@yourdomain.com">Email</a>
+      <a href="mailto:lguerena@me.com">Email</a>
       <a href="tel:+17144737520">Call</a>
       <a href="#top">Top</a>
     </div>
@@ -1072,9 +991,9 @@
     var em = document.getElementById('email').value;
     var p = document.getElementById('phone').value;
     var d = document.getElementById('details').value;
-    var subject = encodeURIComponent('Catering inquiry — ' + c);
+    var subject = encodeURIComponent('Corporate event inquiry — ' + c);
     var body = encodeURIComponent('Name: '+n+'\nCompany: '+c+'\nEmail: '+em+'\nPhone: '+p+'\n\nEvent details:\n'+d);
-    window.location.href = 'mailto:hello@yourdomain.com?subject=' + subject + '&body=' + body;
+    window.location.href = 'mailto:lguerena@me.com?subject=' + subject + '&body=' + body;
   });
 </script>
 
